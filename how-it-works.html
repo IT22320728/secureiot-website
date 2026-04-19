@@ -4,17 +4,142 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How It Works | Secure IoT-SDN</title>
+
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Your main CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- NEW HORIZONTAL TIMELINE STYLE -->
+  <style>
+
+    .how-horizontal-wrap {
+      position: relative;
+      margin-top: 40px;
+      padding: 40px 0 180px;
+      overflow-x: auto;
+      overflow-y: visible;
+    }
+
+    .how-horizontal {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(160px, 1fr));
+      gap: 20px;
+      align-items: start;
+      min-width: 900px;
+    }
+
+    /* LINE */
+    .how-line {
+      position: absolute;
+      top: 30px;
+      left: 5%;
+      width: 90%;
+      height: 4px;
+      background: linear-gradient(90deg, #2fc7b0, #7ef0c9);
+      border-radius: 999px;
+      z-index: 1;
+    }
+
+    /* STEP */
+    .how-step {
+      position: relative;
+      text-align: center;
+      z-index: 2;
+    }
+
+    /* CIRCLE */
+    .how-circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2fc7b0, #24b7a2);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 12px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    /* TEXT */
+    .how-step p {
+      margin: 0;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    /* HOVER POPUP */
+    .how-hover {
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 230px;
+
+      background: #0b1a2d;
+      color: #fff;
+
+      padding: 12px;
+      border-radius: 10px;
+
+      font-size: 0.85rem;
+      line-height: 1.5;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.3s ease;
+
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      z-index: 20;
+    }
+
+    /* SHOW ON HOVER */
+    .how-step:hover .how-hover {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* ARROW */
+    .how-hover::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #0b1a2d transparent;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .how-horizontal {
+        min-width: 800px;
+      }
+    }
+
+  </style>
+
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <header class="topbar">
     <div class="container nav">
       <div class="brand">Secure IoT-SDN</div>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="features.html">Features</a>
@@ -29,60 +154,79 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
     <section>
       <div class="container">
+
+        <!-- HEADER -->
         <div class="section-head">
           <div>
             <span class="mini-label">Simple Journey</span>
             <h2>How it works</h2>
-            <p class="muted">Customers understand solutions faster when the workflow is simple and direct.</p>
+            <p class="muted">
+              Customers understand solutions faster when the workflow is simple and direct.
+            </p>
           </div>
         </div>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div>
-              <h3>Connect your IoT devices</h3>
-              <p class="muted">Smart devices join the network through a controlled gateway environment.</p>
-            </div>
-          </div>
+        <!-- TIMELINE -->
+        <div class="how-horizontal-wrap">
+          <div class="how-horizontal">
 
-          <div class="step">
-            <div class="step-number">2</div>
-            <div>
-              <h3>Verify device identity</h3>
-              <p class="muted">Certificate-based identification and Zero Trust checks ensure only trusted devices are granted proper access.</p>
-            </div>
-          </div>
+            <div class="how-line"></div>
 
-          <div class="step">
-            <div class="step-number">3</div>
-            <div>
-              <h3>Monitor and detect anomalies</h3>
-              <p class="muted">The platform observes traffic flow, trust scores, and behavioural indicators to detect suspicious activities.</p>
+            <!-- STEP 1 -->
+            <div class="how-step">
+              <div class="how-circle">1</div>
+              <p>Connect IoT devices</p>
+              <div class="how-hover">
+                Smart devices join the network through a controlled gateway environment.
+              </div>
             </div>
-          </div>
 
-          <div class="step">
-            <div class="step-number">4</div>
-            <div>
-              <h3>Enforce adaptive security policies</h3>
-              <p class="muted">The SDN controller updates rules dynamically to allow, block, restrict, or isolate risky behaviour.</p>
+            <!-- STEP 2 -->
+            <div class="how-step">
+              <div class="how-circle">2</div>
+              <p>Verify device identity</p>
+              <div class="how-hover">
+                Certificate-based identification and Zero Trust checks ensure only trusted devices are granted proper access.
+              </div>
             </div>
-          </div>
 
-          <div class="step">
-            <div class="step-number">5</div>
-            <div>
-              <h3>Trap attackers and learn from threats</h3>
-              <p class="muted">Malicious traffic can be redirected to honeypots where attacks are studied for improved future defense.</p>
+            <!-- STEP 3 -->
+            <div class="how-step">
+              <div class="how-circle">3</div>
+              <p>Monitor anomalies</p>
+              <div class="how-hover">
+                The platform observes traffic flow and behavior to detect suspicious activities.
+              </div>
             </div>
+
+            <!-- STEP 4 -->
+            <div class="how-step">
+              <div class="how-circle">4</div>
+              <p>Enforce policies</p>
+              <div class="how-hover">
+                SDN dynamically updates rules to allow, block, or isolate risky behavior.
+              </div>
+            </div>
+
+            <!-- STEP 5 -->
+            <div class="how-step">
+              <div class="how-circle">5</div>
+              <p>Trap & learn threats</p>
+              <div class="how-hover">
+                Honeypots capture attacks to improve future defense strategies.
+              </div>
+            </div>
+
           </div>
         </div>
+
       </div>
     </section>
   </main>
+
 </body>
 </html>
