@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domain | SecureIoT-SDN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">SecureIoT-SDN</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="domain.html" class="active">Domain</a>
+        <a href="milestones.html">Milestones</a>
+        <a href="documents.html">Documents</a>
+        <a href="slides.html">Slides</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="mini-label">Academic Section</span>
+            <h2>Domain</h2>
+            <p class="muted">This section preserves the academic structure requested by your instructor.</p>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Literature Survey</h3>
+            <p>
+              Existing IoT security approaches often address only specific layers of protection, such as static access control,
+              gateway-only filtering, or isolated anomaly detection. This project investigates how Zero Trust, SDN, trust scoring,
+              and deception-driven security can be combined into a unified and lightweight defense framework.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Research Gap</h3>
+            <p>
+              Many current solutions are too complex, costly, or resource-heavy for SOHO environments. A key gap exists in low-cost
+              frameworks that can continuously verify devices, detect suspicious behaviour, dynamically enforce security policies,
+              and learn from attacks through honeypot-driven intelligence.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Research Problem</h3>
+            <p>
+              IoT devices in SOHO environments are highly heterogeneous, resource-constrained, and often poorly managed.
+              This makes them vulnerable to identity spoofing, lateral movement, malicious traffic injection, botnet recruitment,
+              and service disruption. Traditional perimeter-based security is not sufficient to address these evolving threats.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Research Objectives</h3>
+            <ul class="clean">
+              <li>Design a lightweight Zero Trust architecture for IoT networks.</li>
+              <li>Authenticate devices using certificate-based identity management.</li>
+              <li>Apply SDN for adaptive and centralized access policy control.</li>
+              <li>Detect suspicious behaviour using trust and anomaly analysis.</li>
+              <li>Integrate honeypots for threat diversion and intelligence gathering.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Methodology</h3>
+            <ul class="clean">
+              <li>Build a layered architecture with management, control, gateway, and device layers.</li>
+              <li>Use Raspberry Pi and Ryu as the programmable SDN security controller environment.</li>
+              <li>Collect behavioural and flow data for threat detection and trust evaluation.</li>
+              <li>Apply dynamic policy enforcement based on risk level and device trust.</li>
+              <li>Redirect suspicious traffic to honeypots and extract insights for defense improvement.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Technologies Used</h3>
+            <div class="pill-row">
+              <span class="pill">Python</span>
+              <span class="pill">Flask</span>
+              <span class="pill">Ryu Controller</span>
+              <span class="pill">TensorFlow</span>
+              <span class="pill">SQLite</span>
+              <span class="pill">Docker</span>
+              <span class="pill">ESP32</span>
+              <span class="pill">Arduino IDE</span>
+              <span class="pill">Raspberry Pi 4</span>
+              <span class="pill">HTML/CSS/JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
