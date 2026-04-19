@@ -25,5 +25,11 @@ SecureIoT-SDN is a smart IoT security platform that integrates Software Defined 
 - About Us
 - Contact
 
+## 👨‍💻 Team Members
+- IT22314956 – GONAGALA G.A.S.T.
+- IT22320728 – RANAWAKA R.A.S.M.
+- IT22136510 – ERIYAGAMA V.K.
+- IT22004536 – DEWARATHNE P.S.
+
 ## 🔹 Author
 SLIIT Research Project Group
