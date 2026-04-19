@@ -5,16 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Domain | Secure IoT-SDN</title>
   <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+  <!-- NAVBAR -->
   <header class="topbar">
     <div class="container nav">
       <div class="brand">Secure IoT-SDN</div>
+
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="features.html">Features</a>
@@ -29,32 +36,121 @@
     </div>
   </header>
 
+  <!-- MAIN -->
   <main>
     <section>
       <div class="container">
+
+        <!-- SECTION HEADER -->
         <div class="section-head">
           <div>
             <span class="mini-label">Academic Section</span>
             <h2>Domain</h2>
-            <p class="muted">A structured overview of the project's academic components and deliverables.</p>
+            <p class="muted">
+              A structured overview of the project's academic components and deliverables.
+            </p>
           </div>
         </div>
 
-        <div class="grid-2">
+        <!-- 🔥 TECHNOLOGIES (MOVED TO TOP) -->
+        <div class="card tech-section">
+          <h3>Technologies Used</h3>
+          <p class="muted">
+            Core technologies used in the design and implementation of Secure IoT-SDN.
+          </p>
+
+          <div class="tech-grid">
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/python.png" alt="Python">
+              </div>
+              <p>Python</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/flask.png" alt="Flask">
+              </div>
+              <p>Flask</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/ryu.png" alt="Ryu Controller">
+              </div>
+              <p>Ryu Controller</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/tensorflow.png" alt="TensorFlow">
+              </div>
+              <p>TensorFlow</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/sqlite.png" alt="SQLite">
+              </div>
+              <p>SQLite</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/docker.png" alt="Docker">
+              </div>
+              <p>Docker</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/esp32.png" alt="ESP32">
+              </div>
+              <p>ESP32</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/arduino.png" alt="Arduino IDE">
+              </div>
+              <p>Arduino IDE</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/raspberrypi.png" alt="Raspberry Pi">
+              </div>
+              <p>Raspberry Pi 4</p>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-circle">
+                <img src="images/htmlcssjs.png" alt="HTML CSS JS">
+              </div>
+              <p>HTML/CSS/JS</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EXISTING CONTENT -->
+
+        <div class="grid-2" style="margin-top: 18px;">
           <div class="card">
             <h3>Literature Survey</h3>
             <p>
-              Existing IoT security approaches often address only specific layers of protection, such as static access control,
-              gateway-only filtering, or isolated anomaly detection. This project investigates how Zero Trust, SDN, trust scoring,
-              and deception-driven security can be combined into a unified and lightweight defense framework.
+              Existing IoT security approaches often address only specific layers of protection such as static access control,
+              gateway filtering, or isolated anomaly detection. This project explores integrating Zero Trust, SDN,
+              trust scoring, and deception techniques into a unified framework.
             </p>
           </div>
+
           <div class="card">
             <h3>Research Gap</h3>
             <p>
-              Many current solutions are too complex, costly, or resource-heavy for SOHO environments. A key gap exists in low-cost
-              frameworks that can continuously verify devices, detect suspicious behaviour, dynamically enforce security policies,
-              and learn from attacks through honeypot-driven intelligence.
+              Many existing systems are too complex or expensive for SOHO environments. There is a need for a lightweight,
+              adaptive security solution that continuously verifies devices and responds dynamically to threats.
             </p>
           </div>
         </div>
@@ -63,19 +159,19 @@
           <div class="card">
             <h3>Research Problem</h3>
             <p>
-              IoT devices in SOHO environments are highly heterogeneous, resource-constrained, and often poorly managed.
-              This makes them vulnerable to identity spoofing, lateral movement, malicious traffic injection, botnet recruitment,
-              and service disruption. Traditional perimeter-based security is not sufficient to address these evolving threats.
+              IoT environments are vulnerable due to weak authentication, poor monitoring, and lack of centralized control.
+              Attackers can exploit these weaknesses for unauthorized access, data theft, and network disruption.
             </p>
           </div>
+
           <div class="card">
             <h3>Research Objectives</h3>
             <ul class="clean">
-              <li>Design a lightweight Zero Trust architecture for IoT networks.</li>
-              <li>Authenticate devices using certificate-based identity management.</li>
-              <li>Apply SDN for adaptive and centralized access policy control.</li>
-              <li>Detect suspicious behaviour using trust and anomaly analysis.</li>
-              <li>Integrate honeypots for threat diversion and intelligence gathering.</li>
+              <li>Implement Zero Trust security for IoT networks</li>
+              <li>Ensure strong device authentication</li>
+              <li>Detect anomalies using behavioral analysis</li>
+              <li>Apply adaptive SDN-based policies</li>
+              <li>Use honeypots for threat intelligence</li>
             </ul>
           </div>
         </div>
@@ -84,31 +180,18 @@
           <div class="card">
             <h3>Methodology</h3>
             <ul class="clean">
-              <li>Build a layered architecture with management, control, gateway, and device layers.</li>
-              <li>Use Raspberry Pi and Ryu as the programmable SDN security controller environment.</li>
-              <li>Collect behavioural and flow data for threat detection and trust evaluation.</li>
-              <li>Apply dynamic policy enforcement based on risk level and device trust.</li>
-              <li>Redirect suspicious traffic to honeypots and extract insights for defense improvement.</li>
+              <li>Design layered IoT architecture</li>
+              <li>Use SDN controller (Ryu)</li>
+              <li>Collect traffic data</li>
+              <li>Analyze threats dynamically</li>
+              <li>Improve defense using honeypots</li>
             </ul>
           </div>
-          <div class="card">
-            <h3>Technologies Used</h3>
-            <div class="pill-row">
-              <span class="pill">Python</span>
-              <span class="pill">Flask</span>
-              <span class="pill">Ryu Controller</span>
-              <span class="pill">TensorFlow</span>
-              <span class="pill">SQLite</span>
-              <span class="pill">Docker</span>
-              <span class="pill">ESP32</span>
-              <span class="pill">Arduino IDE</span>
-              <span class="pill">Raspberry Pi 4</span>
-              <span class="pill">HTML/CSS/JavaScript</span>
-            </div>
-          </div>
         </div>
+
       </div>
     </section>
   </main>
+
 </body>
 </html>
