@@ -1,6 +1,9 @@
-# SecureIoT-SDN
+<img width="1141" height="278" alt="image" src="https://github.com/user-attachments/assets/25b13d2b-1253-4840-9292-b8729847f785" /># SecureIoT-SDN
 
 SecureIoT-SDN is a smart IoT security platform that integrates Software Defined Networking (SDN), Zero Trust architecture, and Machine Learning to monitor network traffic, detect anomalies, and prevent cyber attacks in real time.
+
+## 🌐 Live Website
+👉 [https://it22320728.github.io/secureiot-website/](https://it22320728.github.io/secureiot-website/)
 
 ## 🔹 Features
 - Real-time threat detection
