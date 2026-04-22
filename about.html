@@ -36,7 +36,13 @@
     <div class="container nav">
       <div class="brand">Secure IoT-SDN</div>
 
-      <nav class="nav-links">
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="nav-links" id="primary-navigation">
         <a href="index.html">Home</a>
         <a href="features.html">Features</a>
         <a href="how-it-works.html">How It Works</a>
@@ -118,5 +124,8 @@
       </div>
     </section>
   </main>
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js" onerror="this.onerror=null;this.src='https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js';"></script>
+  <script src="bg.js"></script>
+  <script src="nav.js"></script>
 </body>
 </html>
