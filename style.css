@@ -329,12 +329,24 @@ section { padding: 38px 0; }
 .grid-3,
 .grid-4 {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  justify-content: center;
   gap: 18px;
 }
 
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (min-width: 981px) {
+  .team-grid > .member:nth-last-child(2) {
+    grid-column: 2;
+  }
+
+  .team-grid > .member:last-child {
+    grid-column: 3;
+  }
+}
 
 ul.clean {
   padding-left: 18px;
